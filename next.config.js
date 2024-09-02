@@ -4,7 +4,7 @@ const nextConfig = {
   experimental: {
     // Other experimental features can stay
   },
-  distDir: 'out',
+  distDir: 'public', // Change the output directory to "public"
 }
 
 module.exports = nextConfig
