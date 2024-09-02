@@ -1,0 +1,19 @@
+.iconContainer {
+  display: flex;
+  align-items: center;
+}
+
+.uploadButton {
+  margin-left: 20px; /* Increase the margin to space out the icons more */
+  padding: 10px; /* Add padding for better spacing */
+}
+
+.uploadIcon, .darkModeIcon {
+  color: white;
+  width: 48px; /* 3x the default size */
+  height: 48px; /* 3x the default size */
+}
+
+.darkModeToggle {
+  padding: 10px; /* Add padding for better spacing */
+}

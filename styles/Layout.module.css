@@ -1,0 +1,12 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+}

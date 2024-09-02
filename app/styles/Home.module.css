@@ -1,0 +1,159 @@
+.container {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  padding: 2rem;
+  transition: background-color 0.3s ease;
+  overflow-y: auto;
+}
+
+.darkContainer {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+.header {
+  background-color: #2563eb;
+  padding: 1.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.darkModeToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.section {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.darkSection {
+  background-color: #374151;
+  color: #f3f4f6;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.darkSectionTitle {
+  color: #f3f4f6;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.gridCols1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.gridCols2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.gridCols3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gridCols5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+@media (max-width: 768px) {
+  .gridCols3, .gridCols5 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
+  .gridCols2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.metricValue {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  transition: color 0.3s ease;
+}
+
+.darkMetricValue {
+  color: #f3f4f6;
+}
+
+.metricChange {
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.positiveChange {
+  color: #10b981;
+}
+
+.negativeChange {
+  color: #ef4444;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.metricLabel {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4b5563;
+  margin-bottom: 0.75rem;
+}
+
+.darkMetricLabel {
+  color: #d1d5db;
+}
+
+.darkContainer .section,
+.darkContainer .darkSection {
+  background-color: #374151;
+  color: #f3f4f6;
+}
+
+.chartContainer {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.darkChartContainer {
+  background-color: #374151;
+  color: #f3f4f6;
+}
+
+.darkContainer :global(.recharts-wrapper) {
+  background-color: #374151;
+}
