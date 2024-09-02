@@ -4,7 +4,18 @@ const nextConfig = {
   experimental: {
     // Other experimental features can stay
   },
-  distDir: 'out',
+  // Remove the distDir configuration
+  // distDir: 'out',
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        path: false,
+      };
+    }
+    return config;
+  },
 }
 
 module.exports = nextConfig
