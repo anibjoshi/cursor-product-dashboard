@@ -3,6 +3,7 @@ import type { NextRequest } from 'next/server';
 
 export const config = {
   matcher: ["/((?!.*\\..*|_next).*)", "/", "/(api|trpc)(.*)"],
+  runtime: 'edge', // Add this line
 };
 
 export function middleware(request: NextRequest) {
