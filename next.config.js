@@ -4,6 +4,7 @@ const nextConfig = {
   experimental: {
     // Other experimental features can stay
   },
+  distDir: 'out',
 }
 
 module.exports = nextConfig
